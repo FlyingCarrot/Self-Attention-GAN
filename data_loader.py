@@ -32,7 +32,7 @@ class Data_Loader():
 
     def load_celeb(self):
         transforms = self.transform(True, True, True, True)
-        dataset = dsets.ImageFolder(self.path+'/CelebA', transform=transforms)
+        dataset = dsets.ImageFolder(self.path, transform=transforms)
         return dataset
 
 
